@@ -1,0 +1,145 @@
+const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
+botoes[i].classList.add("ativo");
+textos[i].classList.add("ativo");
+botoes[j].classList.remove("ativo");
+textos[j].classList.remove("ativo");
+for (let i = 0; i < botoes.length; i++) {
+  botoes[i].onclick = function () {
+    for (let j = 0; j < botoes.length; j++) {
+      botoes[j].classList.remove("ativo");
+      textos[j].classList.remove("ativo");
+    }
+
+    botoes[i].classList.add("ativo");
+    textos[i].classList.add("ativo");
+  };
+}
+<div class="aba-conteudo ativo">
+  <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+  <h4 class="aba-conteudo-titulo-secundario">
+    Tempo para completar o objetivo
+  </h4>
+  <div class="contador"></div>
+</div>
+<div class="aba-conteudo ativo">
+  <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+  <h4 class="aba-conteudo-titulo-secundario">
+    Tempo para completar o objetivo
+  </h4>
+  <div class="contador"></div>
+</div>
+<div class="aba-conteudo">
+  <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+  <h4 class="aba-conteudo-titulo-secundario">
+    Tempo para completar o objetivo
+  </h4>
+  <div class="contador"></div>
+</div>
+<div class="aba-conteudo">
+  <h3 class="aba-conteudo-titulo-principal">
+    Criar um portfolio com os meus 3 melhores projetos
+  </h3>
+  <h4 class="aba-conteudo-titulo-secundario">
+    Tempo para completar o objetivo
+  </h4>
+  <div class="contador"></div>
+</div>
+<div class="aba-conteudo">
+  <h3 class="aba-conteudo-titulo-principal">
+    Atualizar meu currículo com os certificados da Alura
+  </h3>
+  <h4 class="aba-conteudo-titulo-secundario">
+    Tempo para completar o objetivo
+  </h4>
+  <div class="contador"></div>
+</div>
+const contadores = document.querySelectorAll(".contador");
+contadores[0].textContent = "Contagem regressiva";
+const tempoObjetivo1 = new Date("2024-10-05");
+
+contadores[0].textContent = tempoObjetivo1;
+const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
+let tempoAtual = new Date();
+contadores[0].textContent = tempoObjetivo1 - tempoAtual;
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
+let tempoAtual = new Date();
+
+contadores[0].textContent = tempoObjetivo1 - tempoAtual;
+<button class="botao">Escuro</button>
+.botao{
+  padding: 2em; 
+}
+
+.fundo-preto{
+  background: black;
+  color: white;
+}
+const tempoObjetivo2 = new Date("2023-12-05T00:00:00");
+const tempoObjetivo3 = new Date("2023-12-30T00:00:00");
+const tempoObjetivo4 = new Date("2024-02-01T00:00:00");contadores[0].textContent = calculaTempo(tempoObjetivo1);
+contadores[1].textContent = calculaTempo(tempoObjetivo2);
+contadores[2].textContent = calculaTempo(tempoObjetivo3);
+contadores[3].textContent = calculaTempo(tempoObjetivo4);const tempos = [tempoObjetivo1, tempoObjetivo2, tempoObjetivo3, tempoObjetivo4];contadores[0].textContent = calculaTempo(tempoObjetivo1); //Antes
+
+contadores[0].textContent = calculaTempo(tempos[0]); // Depois// Para cada objetivo na lista de contadores
+for (let i = 0; i < contadores.length; i++) {
+  //Calcular o tempo usando a função e associá-lo ao objetivo
+  contadores[i].textContent = calculaTempo(tempos[i]);
+}function atualizaCronometro() {
+  for (let i = 0; i < contadores.length; i++) {
+    contadores[i].textContent = calculaTempo(tempos[i]);
+  }
+}function comecaCronometro() {
+  atualizaCronometro();
+  setInterval(atualizaCronometro, 1000);
+}
+
+comecaCronometro();return (
+  dias +
+  " dias " +
+  horas +
+  " horas " +
+  minutos +
+  " minutos " +
+  segundos +
+  " segundos"
+);if (tempoFinal > 0) {
+  return (
+    dias +
+    " dias " +
+    horas +
+    " horas " +
+    minutos +
+    " minutos " +
+    segundos +
+    " segundos"
+  );
+} else {
+  return "Prazo Finalizado";
+}const diasAniversario = new Date();
+
+function calculaDias(diasAniversario) {
+    const hoje = new Date();  
+    const tempoRestante = diasAniversario - hoje; 
+    const diasRestantes = Math.floor(tempoRestante / (1000 * 60 * 60 * 24)); 
+    
+    return diasRestantes;
+}function contagemRegressiva(tempoFinal) {
+  let dias = Math.floor(tempoFinal / (60 * 60 * 24));
+
+  if (tempoFinal > 0) {
+    return "CHEGOU O DIA!";
+  } else {
+    return "Faltam " + dias + " dias ";
+  }
+}const animais = ["cachorro", "gato", "coelho"];function comecaCronometro(){
+    setInterval(atualizaCronometro,1000);
+}function comecaCronometro(){
+      setInterval(atualizaCronometro(),1000);
+}console.log(Math.ceil(4.2));  // Saída: 5
+console.log(Math.ceil(9.8));  // Saída: 10console.log(Math.ceil(4.2));  // Saída: 5
+console.log(Math.ceil(9.8));  // Saída: 10console.log(Math.floor(7.9));  // Saída: 7
+console.log(Math.floor(2.1));  // Saída: 2console.log(Math.round(3.4));  // Saída: 3
+console.log(Math.round(5.7));  // Saída: 6
