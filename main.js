@@ -70,10 +70,37 @@ contadores[0].textContent = tempoObjetivo1 - tempoAtual;
 <button class="botao">Escuro</button>
 .botao{
   padding: 2em; 
-}
-
 .fundo-preto{
   background: black;
   color: white;
-}
+}.conteudo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}//comecaCronometro();
 
+<div class="contador">
+  <div class="contador-digito"></div>
+</div><div class="contador">
+  <div class="contador-digito">
+    <p class="contador-digito-numero">7</p>
+    <p class="contador-digito-texto">dias</p>
+  </div><div class="contador">
+  <div class="contador-digito">
+    <p class="contador-digito-numero">7</p>
+    <p class="contador-digito-texto">dias</p>
+  </div>
+  <div class="contador-digito">
+    <p class="contador-digito-numero">7</p>
+    <p class="contador-digito-texto">horas</p>
+  </div>
+  <div class="contador-digito">
+    <p class="contador-digito-numero">7</p>
+    <p class="contador-digito-texto">min</p>
+  </div>
+  <div class="contador-digito">
+    <p class="contador-digito-numero">7</p>
+    <p class="contador-digito-texto">seg</p>
+  </div>
+</div>
+</div>
