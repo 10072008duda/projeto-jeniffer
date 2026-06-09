@@ -161,5 +161,27 @@ contadores[0].textContent = tempoObjetivo1 - tempoAtual;
     return [dias, horas, minutos, segundos];
   } else {
     return [0, 0, 0, 0];
-  }
-}
+  }document.getElementById("seg0").textContent = calculaTempo(tempos[0])[3];
+document.getElementById("seg1").textContent = calculaTempo(tempos[1])[3];
+document.getElementById("seg2").textContent = calculaTempo(tempos[2])[3];
+document.getElementById("seg3").textContent = calculaTempo(tempos[3])[3];
+}for (let i = 0; i < tempos.length; i++) {
+  document.getElementById("seg" + i).textContent = calculaTempo(tempos[i])[3];
+}for (let i = 0; i < contadores.length; i++) {
+  document.getElementById("dias" + i).textContent = calculaTempo(tempos[i])[0];
+  document.getElementById("horas" + i).textContent = calculaTempo(tempos[i])[1];
+  document.getElementById("min" + i).textContent = calculaTempo(tempos[i])[2];
+  document.getElementById("seg" + i).textContent = calculaTempo(tempos[i])[3];
+}<p class="numero">0</p>
+<p class="numero">1</p>
+<p class="numero">2</p>
+<p class="numero">3</p>const numeros = document.querySelectorAll('.numero');
+for (let i = 0; i < numeros.length; i++){
+
+}<h2 class="titulo">Minhas Séries Favoritas</h2>
+<p class="serie">De volta aos 15</p>
+<p id="avaliacao0"></p>
+<p class="serie">Jovem Sheldon</p>
+<p id="avaliacao1"></p>
+<p class="serie">Sweet Tooth</p>
+<p id="avaliacao2"></p><h1 class="numero"></h1>
